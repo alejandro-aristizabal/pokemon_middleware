@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  api:
+    ports:
+      # Expone el puerto de la aplicación.
+    - "8000:8000"
+    build:
+      target: dev
+    volumes:
+      # Agrega el directorio actual como volumen.
+    - .:/app/src/
+    environment:
+      # Habilita la recarga automática.
+      POKEMON_MIDDLEWARE_RELOAD: "True"
