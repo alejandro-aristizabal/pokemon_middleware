@@ -111,8 +111,14 @@ docker-compose -f deploy/docker-compose.yml -f deploy/docker-compose.dev.yml --p
 docker-compose -f deploy/docker-compose.yml -f deploy/docker-compose.dev.yml --project-directory . down
 ```
 
-2. Para ejecutar pruebas en tu máquina local con pytest.
+2. Para ejecutar pruebas en tu máquina local con pytest:
 
 ```bash
-pytest -vv .
+pytest -vv pokemon_middleware
+```
+
+2.1 Utilizando el ambiente de poetry:
+
+```bash
+poetry run python -m pytest -vv pokemon_middleware
 ```
