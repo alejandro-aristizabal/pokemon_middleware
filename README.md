@@ -40,7 +40,7 @@ Pero debes reconstruir la imagen cada vez que modifiques poetry.lock o pyproject
 docker-compose -f deploy/docker-compose.yml --project-directory . build
 ```
 
-## Project structure
+## Estructura del proyecto
 
 ```bash
 $ tree "pokemon_middleware"
@@ -58,7 +58,7 @@ pokemon_middleware
     └── lifetime.py  # Contiene acciones a realizar en el inicio y cierre.
 ```
 
-## Configuration
+## Configuración
 
 Esta aplicación se puede configurar con variables de entorno.
 
@@ -102,7 +102,7 @@ flake8 (detecta posibles errores);
 Puedes obtener más información sobre pre-commit aquí: https://pre-commit.com/
 
 
-## Running tests
+## Ejecución de tests
 
 1. Si deseas ejecutarlo en Docker, simplemente ejecuta:
 
