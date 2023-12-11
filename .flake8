@@ -71,7 +71,7 @@ ignore =
   ; Found too many empty lines in `def`
   WPS473,
   ; too many no-cover comments.
-  WPS403,
+  WPS403,  DAR101, DAR201, DAR301, E501, WPS410, F401, WPS432
 
 per-file-ignores =
   ; all tests
@@ -91,6 +91,7 @@ per-file-ignores =
 
   ; all init files
   __init__.py:
+  __main__.py:
   ; ignore not used imports
   F401,
   ; ignore import with wildcard
